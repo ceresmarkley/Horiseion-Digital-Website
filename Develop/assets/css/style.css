@@ -1,29 +1,30 @@
+/* sets global style of html webpage, specifically the box sizing, paddings and margin to border-box and '0' */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* sets the background color of the entire body of html webpage to #d9dcd6 */
 body {
     background-color: #d9dcd6;
 }
-
+/* sets top header background color, font, padding and color of text */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* sets the h1 header 'Hori' and 'n' display and font size*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* changes the 'seo' in 'Horiseon' h1 header color from white to #d9dcd6 */
 .header h1 .seo {
     color: #d9dcd6;
 }
-
+/* styles our 3 html buttons in our header to have padding & margins. Sets for content to appear on right side of webpage with a different font then h1 text */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,25 +32,21 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header div ul {
-    list-style-type: none;
-}
-
+/* styles header list items from vertically stacking list to side by side "left to right" reading perspective */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* sets <a> link elements in header section color to white and no text-decor. Without this code buttons would appear purple with underline.*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* sets the font size of our body text to 16px */
 p {
     font-size: 16px;
 }
-
+/* hero section is displayed between body and 'content' sections of webpage. below code sets hero sections background image as well as size, position and margins */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +56,59 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/* flipped float-left and float-right sections to be within below .content within css to mirror html format. did not alter display. content section sets content width and margin-left on webpage*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* combined all individual 'content img' into a single '.content img' styling section*/
+.content img {
+    max-height: 200px;
+}
+/* combined all individual 'content h2' into a single '.content h2' styling section*/
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;    
+}
+/* style section for div class 'search-engine-optimization' setting bottom margin, padding, height, font, background color and text color. */
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* style section for div class 'online-reputation-management' setting bottom margin, padding, height, font, background color and text color. */
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* style section for div class 'social-media-marketing' setting bottom margin, padding, height, font, background color and text color. */
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* classes within 'content' class labeled as 'float-left' are set to have their images float-left appearing on the left side of the page with a margin between image and text*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/* classes within 'content' class labeled as 'float-right' are set to have their images float-right appearing on the right side of the page with a margin between image and text*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+/* creates the style for 'benefits' section on webpage. floating right on the webpage below cover img and right of 'content' section. background color and font as well as sections dimensions are all set here*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -84,117 +118,32 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    color:#ffffff
 }
-
-.benefit-lead {
+/* deleted individual 'benefit h3' sections and placed '.benefits h3' to reduce amount of text used with same results on webpage. setting bottom margin and text alignment for 'benefit' headers */
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;  
+}
+/* deleted individual 'benefit p' sections and placed '.benefits p' style to reduce amount of text used with same results on webpage. setting bottom margin and 'p' text color to white. */
+.benefits p {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* deleted individual 'benefit img' sections and placed '.benefits img' style to reduce amount of text used with same results on webpage. setting img display to block and setting margins around img and width */
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* styles the entire 'footer' section of html page. includes padding, font, text-align and positioning of footer relative to other floating elements*/
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
+/* establishes the font size of the header within the 'footer' section. */
 .footer h2 {
     font-size: 20px;
 }
