@@ -25,7 +25,7 @@ body {
     color: #d9dcd6;
 }
 /* styles our 3 html buttons in our header to have padding & margins. Sets for content to appear on right side of webpage with a different font then h1 text */
-.header div {
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -33,7 +33,7 @@ body {
     font-size: 20px;
 }
 /* styles header list items from vertically stacking list to side by side "left to right" reading perspective */
-.header div ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
